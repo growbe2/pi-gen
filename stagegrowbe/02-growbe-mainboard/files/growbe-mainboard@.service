@@ -8,8 +8,8 @@ Type=simple
 Restart=always 
 RestartSec=1
 User=pi
-WorkingDirectory=/home/pi
-ExecStart=/home/pi/growbe-mainboard ./%i.json
+WorkingDirectory=/opt/growbe
+ExecStart=/opt/growbe/growbe-mainboard ./%i.json
 
 [Install] 
 WantedBy=multi-user.target

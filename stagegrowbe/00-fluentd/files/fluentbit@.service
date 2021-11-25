@@ -6,7 +6,7 @@ After=network-online.target
 [Service]
 Type=simple
 EnvironmentFile=/opt/growbe/fluent/%i
-ExecStart=/usr/bin/fluent-bit $OPTIONS
+ExecStart=/opt/td-agent-bit/bin/td-agent-bit $OPTIONS
 Restart=always
 RestartSec=60
 
