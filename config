@@ -1,0 +1,11 @@
+MACHINE_NAME="will"
+
+IMG_NAME="growbe-mainboard"
+
+LOCALE_DEFAULT="fr_CA.UTF-8"
+TARGET_HOSTNAME="rpi$MACHINE_NAME"
+TIMEZONE_DEFAULT="America/Toronto"
+FIRST_USER_NAME=pi
+FIRST_USER_PASS=growbe
+ENABLE_SSH=1
+STAGE="stage0 stage1 stage2 stagegrowbe"
