@@ -1,7 +1,7 @@
 [Unit]
 Description=autossh #%i
 Wants=network-online.target
-After=network-online.target
+After=network-online.target init-config.service
 
 [Service]
 Type=simple

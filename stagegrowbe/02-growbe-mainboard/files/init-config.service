@@ -1,0 +1,10 @@
+[Unit] 
+Description=Init config for growbe from boot
+
+[Service] 
+Type=simple 
+WorkingDirectory=/opt/growbe
+ExecStart=/opt/growbe/init.sh
+
+[Install] 
+WantedBy=multi-user.target
