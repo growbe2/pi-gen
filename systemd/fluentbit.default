@@ -1,0 +1,1 @@
+OPTIONS="-i systemd -p systemd_filter=_SYSTEMD_UNIT=growbe-mainboard.service -p tag="host.*" -t laptop_will -o forward://api.dev.growbe.ca:24224"

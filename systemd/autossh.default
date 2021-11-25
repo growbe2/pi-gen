@@ -1,0 +1,3 @@
+KEY="/home/pi/.ssh/id_rsa"
+REMOTE="root@api.dev.growbe.ca"
+FORWARD="6670:localhost:22"
