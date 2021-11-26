@@ -6,7 +6,7 @@ After=network-online.target init-config.service
 [Service]
 Type=simple
 EnvironmentFile=/opt/growbe/autossh/%i
-ExecStart=/usr/bin/autossh -N -M 0 -o "ExitOnForwardFailure=yes" -o "ServerAliveInterval=180" -o "ServerAliveCountMax=3" -o "PubkeyAuthentication=yes" -o "PasswordAuthentication=no" -i ${KEY} -R ${FORWARD} ${REMOTE}
+ExecStart=/usr/bin/autossh -N -M 0 -o "StrictHostKeyChecking=no" -o "ExitOnForwardFailure=yes" -o "ServerAliveInterval=180" -o "ServerAliveCountMax=3" -o "PubkeyAuthentication=yes" -o "PasswordAuthentication=no" -i ${KEY} -R ${FORWARD} ${REMOTE}
 Restart=always
 RestartSec=60
 
