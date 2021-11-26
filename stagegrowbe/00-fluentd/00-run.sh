@@ -1,6 +1,6 @@
 
 install -m 644 files/fluentd-sources.list "${ROOTFS_DIR}/etc/apt/sources.list.d/"
-install -m 644 files/fluentbit@.service "${ROOTFS_DIR}/usr/lib/systemd/system"
+install -m 644 files/fluentbit@.service "${ROOTFS_DIR}/etc/systemd/system"
 
 mkdir -p "${ROOTFS_DIR}/opt/growbe/fluent/"
 

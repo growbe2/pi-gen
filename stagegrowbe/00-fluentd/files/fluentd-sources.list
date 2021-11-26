@@ -1,1 +1,1 @@
-deb https://packages.fluentbit.io/raspbian/jessie jessie main
+deb https://packages.fluentbit.io/raspbian/buster buster main

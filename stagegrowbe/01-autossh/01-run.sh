@@ -1,5 +1,5 @@
 
-install -m 644 files/autossh@.service "${ROOTFS_DIR}/usr/lib/systemd/system"
+install -m 644 files/autossh@.service "${ROOTFS_DIR}/etc/systemd/system"
 
 mkdir -p "${ROOTFS_DIR}/opt/growbe/autossh/"
 
