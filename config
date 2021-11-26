@@ -8,4 +8,4 @@ TIMEZONE_DEFAULT="America/Toronto"
 FIRST_USER_NAME=pi
 FIRST_USER_PASS=growbe
 ENABLE_SSH=1
-STAGE="stage0 stage1 stage2 stagegrowbe"
+STAGE_LIST="stage0 stage1 stategrowbe stage2"

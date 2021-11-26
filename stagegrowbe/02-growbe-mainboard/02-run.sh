@@ -8,4 +8,6 @@ install -m 644 files/init.sh "${ROOTFS_DIR}/opt/growbe/init.sh"
 on_chroot << EOF
 chmod +x /opt/growbe/init.sh
 systemctl enabled init-config.service
+echo "i2c-dev" >> /etc/modules
+sed -i '1s/^/dtparam=i2c_arm=on\n/' /boot/config.txt
 EOF
