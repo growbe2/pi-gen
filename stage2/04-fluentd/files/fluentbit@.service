@@ -1,0 +1,14 @@
+[Unit]
+Description=fluentbit #%i
+Wants=network-online.target
+After=network-online.target init-config.service
+
+[Service]
+Type=simple
+EnvironmentFile=/opt/growbe/fluent/%i
+ExecStart=/opt/td-agent-bit/bin/td-agent-bit $OPTIONS
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
