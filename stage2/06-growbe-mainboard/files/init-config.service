@@ -1,5 +1,6 @@
 [Unit] 
 Description=Init config for growbe from boot
+After=network-online.target
 
 [Service] 
 Type=simple 

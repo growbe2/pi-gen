@@ -7,6 +7,8 @@ install -m 644 files/init.sh "${ROOTFS_DIR}/opt/growbe/init.sh"
 chmod +x "${ROOTFS_DIR}/opt/growbe/init.sh"
 
 on_chroot << EOF
+apt update
+apt install -yq jq zsh curl wireguard
 systemctl enable init-config.service
 echo "i2c-dev" >> /etc/modules
 sed -i '1s/^/dtparam=i2c_arm=on\n/' /boot/config.txt

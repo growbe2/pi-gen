@@ -1,6 +1,6 @@
 [Unit] 
 Description=Growbe mainboard process for config %i
-After=network.target init-config.service
+After=network-online.target init-config.service
 StartLimitIntervalSec=0 
 
 [Service] 
