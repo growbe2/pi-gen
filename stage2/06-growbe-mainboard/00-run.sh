@@ -10,7 +10,7 @@ chmod +x "${ROOTFS_DIR}/opt/growbe/download.sh"
 
 on_chroot << EOF
 apt update
-apt install -yq jq zsh curl wireguard
+apt install -yq jq zsh curl wireguard vim
 systemctl enable init-config.service
 echo "i2c-dev" >> /etc/modules
 sed -i '1s/^/dtparam=i2c_arm=on\n/' /boot/config.txt
